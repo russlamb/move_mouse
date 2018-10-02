@@ -3,7 +3,16 @@ import time
 import win32api
 
 def move_mouse(movement_x, movement_y, velocity_x, velocity_y):
-    """This function will move the mouse cursor back and forth until the Q button is pressed"""
+    """
+    This function will move the mouse cursor back and forth until the Q button is pressed
+
+    :param movement_x: if positive, move to the right. Negative, move to the left
+    :param movement_y: if positive, move up. Negative, move down.
+    :param velocity_x: How many pixels to move each second, left and right.
+    :param velocity_y: how many pixels to move each second, up and down.
+    :return:
+    """
+
     current = win32api.GetCursorPos()
     current_x = start_x = current[0]
     current_y = start_y = current[1]
