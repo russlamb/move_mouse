@@ -1,5 +1,5 @@
 # move_mouse
-Move mouse back and forth using the Win32 API
+Move mouse back and forth using the Win32 API in Python 3
 
 ## Usage
 Call the move_mouse function with the desired parameters.  The script will move the mouse back and forth until the Q key is pressed.
